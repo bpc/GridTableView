@@ -6,4 +6,5 @@
 //  Copyright (c) 2013 youknowone.org. All rights reserved.
 //
 
-#import <GTVGridTableView/GTVGridTableView.h>
+#import <GridTableView/GTVGridTableView.h>
+
