@@ -143,6 +143,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger cellCount = [self numberOfCellsInSection:indexPath.section];
     NSInteger columnCount = [self numberOfColumnsInSection:indexPath.section];
     NSString *reuseIdentifier = @(columnCount).stringValue;
 
@@ -180,11 +181,13 @@
         holder.coverButton.frame = holder.bounds;
         holder.coverButton.tag = 0x10000 * indexPath.section + index + i;
 
-        GTVGridTableViewCell *gridCell = [self cellForGridAtIndex:index + i section:indexPath.section];
-        gridCell.frame = holder.bounds;
-        [holder insertSubview:gridCell belowSubview:holder.coverButton];
+        if (index + i < cellCount) {
+            GTVGridTableViewCell *gridCell = [self cellForGridAtIndex:index + i section:indexPath.section];
+            gridCell.frame = holder.bounds;
+            [holder insertSubview:gridCell belowSubview:holder.coverButton];
 
-        holder.cell = gridCell;
+            holder.cell = gridCell;
+        }
     }
 
     return cell;
