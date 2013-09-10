@@ -103,8 +103,9 @@
 
 
 - (void)coverDidSelected:(id)sender {
+    NSInteger tag = [sender tag];
+    if (tag < 0) return;
     if ([self.gridSource respondsToSelector:@selector(tableView:didSelectGridAtIndex:section:)]) {
-        NSInteger tag = [sender tag];
         NSInteger section = tag / 0x10000;
         NSInteger index = tag % 0x10000;
         [self.gridSource tableView:self didSelectGridAtIndex:index section:section];
@@ -178,8 +179,8 @@
     for (int i = 0; i < columnCount; i++) {
         _GTVGridTableViewRowCellHolder *holder = cell.holders[i];
         [holder.cell removeFromSuperview];
+        holder.cell = nil;
         holder.coverButton.frame = holder.bounds;
-        holder.coverButton.tag = 0x10000 * indexPath.section + index + i;
 
         if (index + i < cellCount) {
             GTVGridTableViewCell *gridCell = [self cellForGridAtIndex:index + i section:indexPath.section];
@@ -187,6 +188,9 @@
             [holder insertSubview:gridCell belowSubview:holder.coverButton];
 
             holder.cell = gridCell;
+            holder.coverButton.tag = 0x10000 * indexPath.section + index + i;
+        } else {
+            holder.coverButton.tag = -1;
         }
     }
 
