@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38FD754A17DF505200153727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD754917DF505200153727 /* Foundation.framework */; };
+		38FD754F17DF505200153727 /* GTVGridTableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 38FD754E17DF505200153727 /* GTVGridTableView.h */; };
+		38FD755117DF505200153727 /* GTVGridTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD755017DF505200153727 /* GTVGridTableView.m */; };
+		38FD755817DF505200153727 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD755717DF505200153727 /* XCTest.framework */; };
+		38FD755917DF505200153727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD754917DF505200153727 /* Foundation.framework */; };
+		38FD755B17DF505200153727 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD755A17DF505200153727 /* UIKit.framework */; };
+		38FD755E17DF505200153727 /* libGridTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD754617DF505200153727 /* libGridTableView.a */; };
+		38FD756417DF505200153727 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38FD756217DF505200153727 /* InfoPlist.strings */; };
+		38FD756617DF505200153727 /* GridTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD756517DF505200153727 /* GridTableViewTests.m */; };
+		38FD757417DF50B000153727 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD754917DF505200153727 /* Foundation.framework */; };
+		38FD757617DF50B000153727 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD757517DF50B000153727 /* CoreGraphics.framework */; };
+		38FD757717DF50B000153727 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD755A17DF505200153727 /* UIKit.framework */; };
+		38FD757D17DF50B000153727 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38FD757B17DF50B000153727 /* InfoPlist.strings */; };
+		38FD757F17DF50B000153727 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD757E17DF50B000153727 /* main.m */; };
+		38FD758317DF50B000153727 /* GTTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD758217DF50B000153727 /* GTTAppDelegate.m */; };
+		38FD758617DF50B000153727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FD758417DF50B000153727 /* Main.storyboard */; };
+		38FD758917DF50B000153727 /* GTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD758817DF50B000153727 /* GTTViewController.m */; };
+		38FD758B17DF50B100153727 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FD758A17DF50B100153727 /* Images.xcassets */; };
+		38FD75A717DF5C9000153727 /* libGridTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FD754617DF505200153727 /* libGridTableView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38FD755C17DF505200153727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38FD753E17DF505200153727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38FD754517DF505200153727;
+			remoteInfo = GridTableView;
+		};
+		38FD75A417DF50C200153727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38FD753E17DF505200153727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38FD754517DF505200153727;
+			remoteInfo = GridTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		38FD754417DF505200153727 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				38FD754F17DF505200153727 /* GTVGridTableView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		38FD754617DF505200153727 /* libGridTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGridTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FD754917DF505200153727 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38FD754D17DF505200153727 /* GridTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GridTableView-Prefix.pch"; sourceTree = "<group>"; };
+		38FD754E17DF505200153727 /* GTVGridTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVGridTableView.h; sourceTree = "<group>"; };
+		38FD755017DF505200153727 /* GTVGridTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVGridTableView.m; sourceTree = "<group>"; };
+		38FD755617DF505200153727 /* GridTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FD755717DF505200153727 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		38FD755A17DF505200153727 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		38FD756117DF505200153727 /* GridTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GridTableViewTests-Info.plist"; sourceTree = "<group>"; };
+		38FD756317DF505200153727 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38FD756517DF505200153727 /* GridTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridTableViewTests.m; sourceTree = "<group>"; };
+		38FD757317DF50B000153727 /* GridTableViewTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridTableViewTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FD757517DF50B000153727 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		38FD757A17DF50B000153727 /* GridTableViewTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GridTableViewTestApp-Info.plist"; sourceTree = "<group>"; };
+		38FD757C17DF50B000153727 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38FD757E17DF50B000153727 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38FD758017DF50B000153727 /* GridTableViewTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GridTableViewTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		38FD758117DF50B000153727 /* GTTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTTAppDelegate.h; sourceTree = "<group>"; };
+		38FD758217DF50B000153727 /* GTTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTTAppDelegate.m; sourceTree = "<group>"; };
+		38FD758517DF50B000153727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38FD758717DF50B000153727 /* GTTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTTViewController.h; sourceTree = "<group>"; };
+		38FD758817DF50B000153727 /* GTTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTTViewController.m; sourceTree = "<group>"; };
+		38FD758A17DF50B100153727 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		38FD759817DF50B100153727 /* GridTableViewTestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GridTableViewTestAppTests-Info.plist"; sourceTree = "<group>"; };
+		38FD759A17DF50B100153727 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38FD759C17DF50B100153727 /* GridTableViewTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridTableViewTestAppTests.m; sourceTree = "<group>"; };
+		38FD75A617DF513800153727 /* GridTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridTableView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38FD754317DF505200153727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD754A17DF505200153727 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38FD755317DF505200153727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD755817DF505200153727 /* XCTest.framework in Frameworks */,
+				38FD755E17DF505200153727 /* libGridTableView.a in Frameworks */,
+				38FD755B17DF505200153727 /* UIKit.framework in Frameworks */,
+				38FD755917DF505200153727 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38FD757017DF50B000153727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD75A717DF5C9000153727 /* libGridTableView.a in Frameworks */,
+				38FD757617DF50B000153727 /* CoreGraphics.framework in Frameworks */,
+				38FD757717DF50B000153727 /* UIKit.framework in Frameworks */,
+				38FD757417DF50B000153727 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38FD753D17DF505200153727 = {
+			isa = PBXGroup;
+			children = (
+				38FD754B17DF505200153727 /* GridTableView */,
+				38FD755F17DF505200153727 /* GridTableViewTests */,
+				38FD757817DF50B000153727 /* GridTableViewTestApp */,
+				38FD759617DF50B100153727 /* GridTableViewTestAppTests */,
+				38FD754817DF505200153727 /* Frameworks */,
+				38FD754717DF505200153727 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38FD754717DF505200153727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38FD754617DF505200153727 /* libGridTableView.a */,
+				38FD755617DF505200153727 /* GridTableViewTests.xctest */,
+				38FD757317DF50B000153727 /* GridTableViewTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38FD754817DF505200153727 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38FD754917DF505200153727 /* Foundation.framework */,
+				38FD755717DF505200153727 /* XCTest.framework */,
+				38FD755A17DF505200153727 /* UIKit.framework */,
+				38FD757517DF50B000153727 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38FD754B17DF505200153727 /* GridTableView */ = {
+			isa = PBXGroup;
+			children = (
+				38FD75A617DF513800153727 /* GridTableView.h */,
+				38FD754E17DF505200153727 /* GTVGridTableView.h */,
+				38FD755017DF505200153727 /* GTVGridTableView.m */,
+				38FD754C17DF505200153727 /* Supporting Files */,
+			);
+			path = GridTableView;
+			sourceTree = "<group>";
+		};
+		38FD754C17DF505200153727 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38FD754D17DF505200153727 /* GridTableView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38FD755F17DF505200153727 /* GridTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				38FD756517DF505200153727 /* GridTableViewTests.m */,
+				38FD756017DF505200153727 /* Supporting Files */,
+			);
+			path = GridTableViewTests;
+			sourceTree = "<group>";
+		};
+		38FD756017DF505200153727 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38FD756117DF505200153727 /* GridTableViewTests-Info.plist */,
+				38FD756217DF505200153727 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38FD757817DF50B000153727 /* GridTableViewTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				38FD758117DF50B000153727 /* GTTAppDelegate.h */,
+				38FD758217DF50B000153727 /* GTTAppDelegate.m */,
+				38FD758417DF50B000153727 /* Main.storyboard */,
+				38FD758717DF50B000153727 /* GTTViewController.h */,
+				38FD758817DF50B000153727 /* GTTViewController.m */,
+				38FD758A17DF50B100153727 /* Images.xcassets */,
+				38FD757917DF50B000153727 /* Supporting Files */,
+			);
+			path = GridTableViewTestApp;
+			sourceTree = "<group>";
+		};
+		38FD757917DF50B000153727 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38FD757A17DF50B000153727 /* GridTableViewTestApp-Info.plist */,
+				38FD757B17DF50B000153727 /* InfoPlist.strings */,
+				38FD757E17DF50B000153727 /* main.m */,
+				38FD758017DF50B000153727 /* GridTableViewTestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38FD759617DF50B100153727 /* GridTableViewTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				38FD759C17DF50B100153727 /* GridTableViewTestAppTests.m */,
+				38FD759717DF50B100153727 /* Supporting Files */,
+			);
+			path = GridTableViewTestAppTests;
+			sourceTree = "<group>";
+		};
+		38FD759717DF50B100153727 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38FD759817DF50B100153727 /* GridTableViewTestAppTests-Info.plist */,
+				38FD759917DF50B100153727 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38FD754517DF505200153727 /* GridTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38FD756917DF505200153727 /* Build configuration list for PBXNativeTarget "GridTableView" */;
+			buildPhases = (
+				38FD754217DF505200153727 /* Sources */,
+				38FD754317DF505200153727 /* Frameworks */,
+				38FD754417DF505200153727 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GridTableView;
+			productName = GridTableView;
+			productReference = 38FD754617DF505200153727 /* libGridTableView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		38FD755517DF505200153727 /* GridTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38FD756C17DF505200153727 /* Build configuration list for PBXNativeTarget "GridTableViewTests" */;
+			buildPhases = (
+				38FD755217DF505200153727 /* Sources */,
+				38FD755317DF505200153727 /* Frameworks */,
+				38FD755417DF505200153727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38FD755D17DF505200153727 /* PBXTargetDependency */,
+			);
+			name = GridTableViewTests;
+			productName = GridTableViewTests;
+			productReference = 38FD755617DF505200153727 /* GridTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		38FD757217DF50B000153727 /* GridTableViewTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38FD759E17DF50B100153727 /* Build configuration list for PBXNativeTarget "GridTableViewTestApp" */;
+			buildPhases = (
+				38FD756F17DF50B000153727 /* Sources */,
+				38FD757017DF50B000153727 /* Frameworks */,
+				38FD757117DF50B000153727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38FD75A517DF50C200153727 /* PBXTargetDependency */,
+			);
+			name = GridTableViewTestApp;
+			productName = GridTableViewTestApp;
+			productReference = 38FD757317DF50B000153727 /* GridTableViewTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38FD753E17DF505200153727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = youknowone.org;
+				TargetAttributes = {
+					38FD755517DF505200153727 = {
+						TestTargetID = 38FD757217DF50B000153727;
+					};
+				};
+			};
+			buildConfigurationList = 38FD754117DF505200153727 /* Build configuration list for PBXProject "GridTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38FD753D17DF505200153727;
+			productRefGroup = 38FD754717DF505200153727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38FD754517DF505200153727 /* GridTableView */,
+				38FD755517DF505200153727 /* GridTableViewTests */,
+				38FD757217DF50B000153727 /* GridTableViewTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38FD755417DF505200153727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD756417DF505200153727 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38FD757117DF50B000153727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD758B17DF50B100153727 /* Images.xcassets in Resources */,
+				38FD757D17DF50B000153727 /* InfoPlist.strings in Resources */,
+				38FD758617DF50B000153727 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38FD754217DF505200153727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD755117DF505200153727 /* GTVGridTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38FD755217DF505200153727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD756617DF505200153727 /* GridTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38FD756F17DF50B000153727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38FD758317DF50B000153727 /* GTTAppDelegate.m in Sources */,
+				38FD757F17DF50B000153727 /* main.m in Sources */,
+				38FD758917DF50B000153727 /* GTTViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38FD755D17DF505200153727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38FD754517DF505200153727 /* GridTableView */;
+			targetProxy = 38FD755C17DF505200153727 /* PBXContainerItemProxy */;
+		};
+		38FD75A517DF50C200153727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38FD754517DF505200153727 /* GridTableView */;
+			targetProxy = 38FD75A417DF50C200153727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38FD756217DF505200153727 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38FD756317DF505200153727 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38FD757B17DF50B000153727 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38FD757C17DF50B000153727 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		38FD758417DF50B000153727 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38FD758517DF50B000153727 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38FD759917DF50B100153727 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38FD759A17DF50B100153727 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38FD756717DF505200153727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		38FD756817DF505200153727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38FD756A17DF505200153727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GridTableView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridTableView/GridTableView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		38FD756B17DF505200153727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GridTableView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridTableView/GridTableView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		38FD756D17DF505200153727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GridTableViewTestApp.app/GridTableViewTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridTableView/GridTableView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GridTableViewTests/GridTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		38FD756E17DF505200153727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GridTableViewTestApp.app/GridTableViewTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridTableView/GridTableView-Prefix.pch";
+				INFOPLIST_FILE = "GridTableViewTests/GridTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		38FD759F17DF50B100153727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridTableViewTestApp/GridTableViewTestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GridTableViewTestApp/GridTableViewTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		38FD75A017DF50B100153727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GridTableViewTestApp/GridTableViewTestApp-Prefix.pch";
+				INFOPLIST_FILE = "GridTableViewTestApp/GridTableViewTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38FD754117DF505200153727 /* Build configuration list for PBXProject "GridTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FD756717DF505200153727 /* Debug */,
+				38FD756817DF505200153727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38FD756917DF505200153727 /* Build configuration list for PBXNativeTarget "GridTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FD756A17DF505200153727 /* Debug */,
+				38FD756B17DF505200153727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		38FD756C17DF505200153727 /* Build configuration list for PBXNativeTarget "GridTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FD756D17DF505200153727 /* Debug */,
+				38FD756E17DF505200153727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		38FD759E17DF50B100153727 /* Build configuration list for PBXNativeTarget "GridTableViewTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38FD759F17DF50B100153727 /* Debug */,
+				38FD75A017DF50B100153727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38FD753E17DF505200153727 /* Project object */;
+}
