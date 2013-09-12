@@ -116,7 +116,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if ([self.gridSource respondsToSelector:_cmd]) {
-        [self.gridSource numberOfSectionsInTableView:(id)tableView];
+        return [self.gridSource numberOfSectionsInTableView:(id)tableView];
     }
     return 1;
 }
