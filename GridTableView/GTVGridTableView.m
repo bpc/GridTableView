@@ -17,6 +17,13 @@
 
 @implementation _GTVGridTableViewRowCell
 
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    self.backgroundColor = [UIColor clearColor];
+    self.contentView.backgroundColor = [UIColor clearColor];
+    return self;
+}
+
 @end
 
 
@@ -35,6 +42,7 @@
         UIButton *cover = [[UIButton alloc] initWithFrame:self.bounds];
         [self addSubview:cover];
         self.coverButton = cover;
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
@@ -148,19 +156,19 @@
     NSInteger columnCount = [self numberOfColumnsInSection:indexPath.section];
     NSString *reuseIdentifier = @(columnCount).stringValue;
 
-    _GTVGridTableViewRowCell *cell = (id)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-    if (cell == nil) {
-        cell = [[_GTVGridTableViewRowCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
+    _GTVGridTableViewRowCell *tableCell = (id)[tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+    if (tableCell == nil) {
+        tableCell = [[_GTVGridTableViewRowCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
 
         NSMutableArray *holders = [NSMutableArray array];
         for (int i = 0; i < columnCount; i++) {
             CGFloat width = tableView.frame.size.width / columnCount;
             _GTVGridTableViewRowCellHolder *view = [[_GTVGridTableViewRowCellHolder alloc] initWithFrame:CGRectMake(width * i, .0, width, 1.0f)];
             [view.coverButton addTarget:self action:@selector(coverDidSelected:) forControlEvents:UIControlEventTouchUpInside];
-            [cell addSubview:view];
+            [tableCell addSubview:view];
             [holders addObject:view];
         }
-        cell.holders = holders;
+        tableCell.holders = holders;
     }
     CGFloat rowHeight = -1.0f;
     if ([tableView.delegate respondsToSelector:@selector(tableView:heightForRowAtIndexPath:)]) {
@@ -169,7 +177,7 @@
     if (rowHeight < 0) {
         rowHeight = tableView.rowHeight;
     }
-    for (UIView *holder in cell.holders) {
+    for (UIView *holder in tableCell.holders) {
         CGRect frame = holder.frame;
         frame.size.height = rowHeight;
         holder.frame = frame;
@@ -177,7 +185,7 @@
 
     NSInteger index = indexPath.row * columnCount;
     for (int i = 0; i < columnCount; i++) {
-        _GTVGridTableViewRowCellHolder *holder = cell.holders[i];
+        _GTVGridTableViewRowCellHolder *holder = tableCell.holders[i];
         [holder.cell removeFromSuperview];
         holder.cell = nil;
         holder.coverButton.frame = holder.bounds;
@@ -194,7 +202,7 @@
         }
     }
 
-    return cell;
+    return tableCell;
 }
 
 @end
@@ -217,6 +225,8 @@
     self = [super init];
     if (self != nil) {
         self->_reuseIdentifier = reuseIdentifier;
+        self.backgroundColor = [UIColor clearColor];
+        self.frame = CGRectMake(.0, .0, 100, 100);
     }
     return self;
 }
