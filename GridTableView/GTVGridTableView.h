@@ -39,6 +39,8 @@
 - (GTVGridTableViewCell *)tableView:(GTVGridTableView *)tableView cellForGridAtIndex:(NSInteger)index section:(NSInteger)section;
 
 - (void)tableView:(GTVGridTableView *)tableView didSelectGridAtIndex:(NSInteger)index section:(NSInteger)section;
+- (CGFloat)tableView:(GTVGridTableView *)tableView widthForLeftInRowAtRowIndexPath:(NSIndexPath *)indexPath;
+- (CGFloat)tableView:(GTVGridTableView *)tableView widthForRightInRowAtRowIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

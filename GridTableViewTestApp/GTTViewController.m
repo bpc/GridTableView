@@ -50,4 +50,12 @@
     NSLog(@"%d %d", section, index);
 }
 
+- (CGFloat)tableView:(GTVGridTableView *)tableView widthForLeftInRowAtRowIndexPath:(NSIndexPath *)indexPath {
+    return 10.0f;
+}
+
+- (CGFloat)tableView:(GTVGridTableView *)tableView widthForRightInRowAtRowIndexPath:(NSIndexPath *)indexPath {
+    return 20.0f;
+}
+
 @end

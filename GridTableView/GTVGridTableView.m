@@ -163,7 +163,7 @@
         NSMutableArray *holders = [NSMutableArray array];
         for (int i = 0; i < columnCount; i++) {
             CGFloat width = tableView.frame.size.width / columnCount;
-            _GTVGridTableViewRowCellHolder *view = [[_GTVGridTableViewRowCellHolder alloc] initWithFrame:CGRectMake(width * i, .0, width, 1.0f)];
+            _GTVGridTableViewRowCellHolder *view = [[_GTVGridTableViewRowCellHolder alloc] initWithFrame:CGRectMake(.0, .0, width, tableView.rowHeight)];
             [view.coverButton addTarget:self action:@selector(coverDidSelected:) forControlEvents:UIControlEventTouchUpInside];
             [tableCell addSubview:view];
             [holders addObject:view];
@@ -184,10 +184,20 @@
     }
 
     NSInteger index = indexPath.row * columnCount;
+    CGFloat left = .0f;
+    if ([self.gridSource respondsToSelector:@selector(tableView:widthForLeftInRowAtRowIndexPath:)]) {
+        left = [self.gridSource tableView:(id)tableView widthForLeftInRowAtRowIndexPath:indexPath];
+    }
+    CGFloat right = .0f;
+    if ([self.gridSource respondsToSelector:@selector(tableView:widthForRightInRowAtRowIndexPath:)]) {
+        right = [self.gridSource tableView:(id)tableView widthForRightInRowAtRowIndexPath:indexPath];
+    }
+    CGFloat width = (tableView.frame.size.width - (left + right)) / columnCount;
     for (int i = 0; i < columnCount; i++) {
         _GTVGridTableViewRowCellHolder *holder = tableCell.holders[i];
         [holder.cell removeFromSuperview];
         holder.cell = nil;
+        holder.frame = CGRectMake(left + i * width, .0, width, tableView.rowHeight);
         holder.coverButton.frame = holder.bounds;
 
         if (index + i < cellCount) {
